@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <header className='bg-white shadow-xl py-5 px-6 sm:px-8 lg:px-12 flex justify-between items-center rounded-b-3xl transform transition duration-500  hover:shadow-2xl'>
+    <header className='bg-white shadow-xl py-5 px-6 sm:px-8 lg:px-12 flex justify-between items-center transform transition duration-500  hover:shadow-2xl'>
       {/* Brand/Logo */}
       <h1 className='text-3xl sm:text-4xl font-bold text-indigo-700'>
         Shoe<span className='text-blue-500'>Mart</span>
