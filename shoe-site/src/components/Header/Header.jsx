@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
   return (
@@ -10,10 +11,49 @@ function Header() {
       {/*Navigation */}
       <nav>
         <ul className='flex space-x-5 sm:space-x-8'>
-          <li><a href="#" className="text-gray-700 hover:text-indigo-600 font-medium transition duration-200 hover:underline underline-offset-4">Home</a></li>
-            <li><a href="#" className="text-gray-700 hover:text-indigo-600 font-medium transition duration-200 hover:underline underline-offset-4">Shop</a></li>
-            <li><a href="#" className="text-gray-700 hover:text-indigo-600 font-medium transition duration-200 hover:underline underline-offset-4">About</a></li>
-            <li><a href="#" className="text-gray-700 hover:text-indigo-600 font-medium transition duration-200 hover:underline underline-offset-4">Contact</a></li>
+          <li>
+            <NavLink
+              className={() => 
+                `text-gray-700 hover:text-indigo-600 font-medium transition duration-200 hover:underline underline-offset-4`
+              }
+            >
+             Home 
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/shop"
+              className={() => 
+                `text-gray-700 hover:text-indigo-600 font-medium transition duration-200 hover:underline underline-offset-4`
+              }
+            >
+             Shop
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/about"
+              className={() => 
+                `text-gray-700 hover:text-indigo-600 font-medium transition duration-200 hover:underline underline-offset-4`
+              }
+            >
+             About
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/contact"
+              className={() => 
+                `text-gray-700 hover:text-indigo-600 font-medium transition duration-200 hover:underline underline-offset-4`
+              }
+            >
+             Contact
+            </NavLink>
+          </li>
+            
         </ul>
       </nav>
 
